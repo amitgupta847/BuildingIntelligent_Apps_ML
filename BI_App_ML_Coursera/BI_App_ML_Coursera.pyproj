@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4d9d9d61-a446-4541-9429-c1c41963b83f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BI_App_ML_Coursera.py</StartupFile>
+    <StartupFile>Course2_LinearRegression\Week2_MultipleFeature_Scikit_LinearRegression.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BI_App_ML_Coursera.py" />
+    <Compile Include="Course2_LinearRegression\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Course2_LinearRegression\Week1_Ex1_Scikit_LinearRegression.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Course2_LinearRegression\Week2_MultipleFeature_Scikit_LinearRegression.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Course2_LinearRegression\__init__.py" />
+    <Compile Include="Course3_Classification\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Course3_Classification\__init__.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Course2_LinearRegression\" />
+    <Folder Include="Course3_Classification\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
