@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BI_App_ML_Coursera", "BI_App_ML_Coursera\BI_App_ML_Coursera.pyproj", "{4D9D9D61-A446-4541-9429-C1C41963B83F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D9D9D61-A446-4541-9429-C1C41963B83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9D9D61-A446-4541-9429-C1C41963B83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96BD6840-3E55-4CDB-AAB8-DFEDAA06794E}
+	EndGlobalSection
+EndGlobal
