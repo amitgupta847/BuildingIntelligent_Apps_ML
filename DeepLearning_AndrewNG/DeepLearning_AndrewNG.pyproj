@@ -1,0 +1,50 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ec76b111-4f4f-425d-9a59-f66f4386c16a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Course1_NN_Deep_L\Week3_A1_Planner_NN.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>DeepLearning_AndrewNG</Name>
+    <RootNamespace>DeepLearning_AndrewNG</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Course1_NN_Deep_L\lr_utils.py" />
+    <Compile Include="Course1_NN_Deep_L\planar_utils.py" />
+    <Compile Include="Course1_NN_Deep_L\testCases.py" />
+    <Compile Include="Course1_NN_Deep_L\Week3_A1_Planner_NN.py" />
+    <Compile Include="Course1_NN_Deep_L\Week2_A2_Log_Reg_NN_ToPlay_Copy.py" />
+    <Compile Include="Course1_NN_Deep_L\Week2_A2_Log_Reg_NN.py" />
+    <Compile Include="Course1_NN_Deep_L\Week2_A1_Python_Sigmoid.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Course1_NN_Deep_L\__init__.py" />
+    <Compile Include="DeepLearning_AndrewNG.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Course1_NN_Deep_L\" />
+    <Folder Include="Course2_Imprv_HyperParam\" />
+    <Folder Include="Course4_CNN\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

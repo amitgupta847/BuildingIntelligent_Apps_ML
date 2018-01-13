@@ -11,7 +11,7 @@ import sys
 
 def run():
    
-    sales = pd.read_csv('kc_house_data.csv')
+    sales = pd.read_csv('LR_Data\kc_house_data.csv')
     
     print("Loaded the sales data of {0} shape".format(sales.shape))
     print("Columns are {0}".format(sales.columns))
@@ -22,8 +22,8 @@ def run():
               'lat':float, 'date':str, 'sqft_basement':int,'yr_built':int, 'id':str, 'sqft_lot':int,
               'view':int}
 
-    train_data = pd.read_csv('kc_house_train_data.csv',dtype=dtype_dict)
-    test_data = pd.read_csv('kc_house_test_data.csv',dtype=dtype_dict)
+    train_data = pd.read_csv('LR_Data\kc_house_train_data.csv',dtype=dtype_dict)
+    test_data = pd.read_csv('LR_Data\kc_house_test_data.csv',dtype=dtype_dict)
 
     print("Splitted sales data into train data of {0} shape, and test data of {1} shape"
                                             .format(train_data.shape, test_data.shape))
@@ -39,7 +39,7 @@ def run():
 
     rss= CalculateRSS(model, test_data[features], test_data[target])
     print("\nComputed RSS on test data for this model is: {0}".format(rss))
-
+    plt.show()
 
 def loadModel(train_data, features, target='price'):
   
@@ -54,9 +54,11 @@ def loadModel(train_data, features, target='price'):
 
     #sns.distplot((Y-prediction),bins=50)
  
-    plt.plot(train_data['sqft_living'],train_data['price'],'.', train_data['sqft_living'],predictions,'-')
-
-    plt.show()
+    plt.plot(train_data['sqft_living'],train_data['price'],'.', train_data['sqft_living'],predictions,'r.')
+    plt.xlabel('Area in Sqft')
+    plt.ylabel('House Prices')
+    plt.title('Model fit on Train Data')
+    
     return model_multiplefeature
 
 def CalculateRSS(model, data, originalObs):
@@ -67,25 +69,24 @@ def CalculateRSS(model, data, originalObs):
     return rss
 
 
-
 def TestModel(model, test_data, features, target='price'):
   
     x = test_data[features]
     y = test_data[target]
 
     predictions = model.predict(x)
-
-    #sns.distplot((Y-prediction),bins=50)
- 
+    
+    f2=plt.figure()
     plt.plot(test_data['sqft_living'][0:100],test_data['price'][0:100],'.', 
              test_data['sqft_living'][0:100],predictions[0:100],'.')
-
-    plt.show()
+    plt.xlabel('Area in Sqft')
+    plt.ylabel('House Prices')
+    plt.title('Model fit on 100 Test Data')
 
   
 def GetModelFit(x,y):
     from sklearn.linear_model import LinearRegression
-    model = LinearRegression(normalize=True)
+    model = LinearRegression()
     model.fit(x,y)
     return model
 

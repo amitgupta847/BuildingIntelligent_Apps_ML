@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BI_App_ML_Coursera", "BI_App_ML_Coursera\BI_App_ML_Coursera.pyproj", "{4D9D9D61-A446-4541-9429-C1C41963B83F}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DeepLearning_AndrewNG", "DeepLearning_AndrewNG\DeepLearning_AndrewNG.pyproj", "{EC76B111-4F4F-425D-9A59-F66F4386C16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4D9D9D61-A446-4541-9429-C1C41963B83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D9D9D61-A446-4541-9429-C1C41963B83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC76B111-4F4F-425D-9A59-F66F4386C16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC76B111-4F4F-425D-9A59-F66F4386C16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4d9d9d61-a446-4541-9429-c1c41963b83f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Course2_LinearRegression\Week2_MultipleFeature_Scikit_LinearRegression.py</StartupFile>
+    <StartupFile>Course2_LinearRegression\Week4_Ex1_Overfitting_Polynomial_LargeCofficients_RidgeRegression.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,7 +28,11 @@
     <Compile Include="Course2_LinearRegression\Week1_Ex1_Scikit_LinearRegression.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Course2_LinearRegression\Week2_MultipleFeature_Scikit_LinearRegression.py">
+    <Compile Include="Course2_LinearRegression\Week4_A1_RidgeRigression_KFOLD_Validation.py" />
+    <Compile Include="Course2_LinearRegression\Week3_A1_Assessing_Polynomial_Fit_Scikit_Regression.py" />
+    <Compile Include="Course2_LinearRegression\Week4_Ex1_Overfitting_Polynomial_LargeCofficients_RidgeRegression.py" />
+    <Compile Include="Course2_LinearRegression\Week2_A1_MultipleFeature_Scikit_LinearRegression.py" />
+    <Compile Include="Course2_LinearRegression\Week2_A2_Implementing_GradientDescent.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Course2_LinearRegression\__init__.py" />

@@ -10,7 +10,7 @@ import sys
 #and without the high levarge point.
 
 def run():
-    sales = pd.read_csv('Philadelphia_Crime_Rate_noNA.csv')
+    sales = pd.read_csv('LR_Data\Philadelphia_Crime_Rate_noNA.csv')
     print(sales.columns)
     loadModel(sales, True)
     loadModel(sales, False)
@@ -38,7 +38,9 @@ def loadModel(sales,isWithlevPoint=True):
     #sns.distplot((Y-prediction),bins=50)
  
     plt.plot(sales['CrimeRate'],sales['HousePrice'],'.', x,predictions,'-')
-   
+    plt.xlabel('Crime Rate')
+    plt.ylabel('House Prices')
+    plt.title('Decrease in house price with the increase in crime rate')
 
 def GetModelFit(x,y):
     from sklearn.linear_model import LinearRegression
