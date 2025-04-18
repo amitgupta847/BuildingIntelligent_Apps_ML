@@ -1,0 +1,10 @@
+
+use git bash 
+
+Steps to configure existing git repo on your system:
+
+1.  git clone https://github.com/amitgupta847/your-repo.git
+
+2. add file , commit , push origin master.
+
+3. use git bash  
